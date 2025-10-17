@@ -127,7 +127,6 @@ results/
  └─ confusion_matrix.png       # Visualization
 ```
 
-<img src="results/confusion_matrix.png" width="500">
 
 ## 🧮 Model Highlights
 Established reproducible EEG emotion inference pipeline
