@@ -15,7 +15,7 @@
 ## 📈 Pipeline
 Excel EEG → Welch PSD → 주파수 대역 에너지 적분 → Transformer 추론 → Positive/Active (%)
 
-![pipeline](docs/figures/pipeline.png)
+![pipeline](docs\figures\Pipeline.png)
 
 
 ## ⚙️ Quick Start
