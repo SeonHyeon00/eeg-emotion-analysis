@@ -27,7 +27,7 @@ python src/eeg_model_test.py --input data/samples/dog_sample01.xlsx
 Positive 82.4% | Active 65.7%
 
 
-## 🗃️ 폴더 구조
+## 핵심 기능 🧩
 본 프로젝트는 아래 오픈소스 코드를 기반으로 수정 및 재구성되었습니다.
 PatchedBrainTransformer
 https://github.com/timonkl/PatchedBrainTransformer
