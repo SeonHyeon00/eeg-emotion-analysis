@@ -49,7 +49,11 @@ M.S. in Convergence Biotechnology, Sungkyunkwan University
 🔗 GitHub Profile : https://github.com/SeonHyeon00/eeg-emotion-analysis
 
 
-======
+
+
+
+
+
 
 # 🌍 English Version
 
