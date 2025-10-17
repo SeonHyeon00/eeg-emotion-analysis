@@ -19,7 +19,7 @@ Excel EEG → Welch PSD → 주파수 대역 에너지 적분 → Transformer �
 
 
 ## ⚙️ Quick Start
-```bash
+
 pip install -r requirements.txt
 python src/eeg_model_test.py --input data/samples/dog_sample01.xlsx
 
