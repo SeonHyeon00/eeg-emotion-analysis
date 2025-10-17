@@ -69,6 +69,7 @@ Signal preprocessing includes band-power integration via trapezoidal integration
 to extract frequency-domain energy features.
 
 ## ⚙️ Model Architecture
+```bash
 | Component       | Description                           |
 | --------------- | ------------------------------------- |
 | Backbone        | Patched Brain Transformer (PBT)       |
@@ -78,9 +79,10 @@ to extract frequency-domain energy features.
 | Optimizer       | AdamW                                 |
 | Loss function   | CrossEntropyLoss                      |
 | Framework       | PyTorch 2.0                           |
-
+```
 
 ## 🧠 Data Processing Pipeline
+```bash
 Excel (EEG signals)
 ↓
 Welch PSD computation
@@ -90,7 +92,7 @@ Frequency band integration (delta ~ gamma)
 PBT inference
 ↓
 Output: Positive / Active (%)
-
+```
 ## 💻 Quick Start
 
 1️⃣ Clone repository
@@ -109,18 +111,21 @@ Positive 82.4% | Active 65.7%
 The output shows the probability (%) of positive and active emotional states inferred from EEG.
 
 📊 Results Snapshot
+```bash
 | Metric   | Value |
 | -------- | ----- |
 | Accuracy | 0.81  |
 | F1-score | 0.78  |
 | Loss     | 0.42  |
+```
 
 ## 📁 Example result files:
-
+```bash
 results/
  ├─ prediction_output.txt      # Text result (Positive / Active)
  ├─ metrics.json               # Evaluation metrics
  └─ confusion_matrix.png       # Visualization
+```
 
 <img src="results/confusion_matrix.png" width="500">
 
@@ -131,7 +136,7 @@ Optimized signal-to-feature mapping for small datasets
 Combined PSD-based statistical features with Transformer sequence modeling
 
 ## 🗂️ Repository Structure
-
+```bash
 📁 eeg-emotion-analysis
 ├── README.md
 ├── requirements.txt
@@ -155,6 +160,7 @@ Combined PSD-based statistical features with Transformer sequence modeling
 │
 └── docs/
     └── figures/pipeline.png
+```
 
 ## 👩‍🔬 Author
 
