@@ -5,21 +5,18 @@
 - 신호 처리(PSD) + Transformer 시퀀스 모델링으로 교차 종 감정 추정 파이프라인 구현  
 - 재현 가능한 스크립트와 Colab 노트북 제공  
 
----
 
 ## 🧩 Why this project
 동물 행동 실험에서 얻은 EEG로 감정 상태를 정량화하는 것은 표준화가 어렵습니다.  
 본 프로젝트는 **적은 개체 수의 dog EEG**를 **human EEG 사전학습 모델**로 보완하여  
 실무에 적용 가능한 감정 추정 파이프라인을 제시합니다.  
 
----
 
 ## 📈 Pipeline
 Excel EEG → Welch PSD → 주파수 대역 에너지 적분 → Transformer 추론 → Positive/Active (%)
 
 ![pipeline](docs/figures/pipeline.png)
 
----
 
 ## ⚙️ Quick Start
 ```bash
@@ -161,7 +158,7 @@ Combined PSD-based statistical features with Transformer sequence modeling
 
 👩‍🔬 Author
 
-Sunhyeon Park (박선현)
+Seonhyeon Park (박선현)
 M.S. in Life Sciences, Sungkyunkwan University
 Research area: Antiviral protein mechanism & EEG-based emotion analysis
 📧 oneuldo9090@gmail.com
