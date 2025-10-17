@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+.ipynb_checkpoints/
+
+# Data
+data/*
+!data/.gitkeep
+!data/samples/
+!data/samples/dog_sample01.xlsx
+
+# Results
+results/*
+!results/.gitkeep
+!results/metrics.json
+!results/prediction_output.txt
+!results/visualization.png
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
