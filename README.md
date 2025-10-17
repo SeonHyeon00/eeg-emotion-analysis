@@ -19,22 +19,21 @@ Excel EEG → Welch PSD → 주파수 대역 에너지 적분 → Transformer �
 
 
 ## ⚙️ Quick Start
-
+```bash
 pip install -r requirements.txt
 python src/eeg_model_test.py --input data/samples/dog_sample01.xlsx
-
+```
 📤 출력 예시
 Positive 82.4% | Active 65.7%
 
 
-## 핵심 기능 🧩
 본 프로젝트는 아래 오픈소스 코드를 기반으로 수정 및 재구성되었습니다.
 PatchedBrainTransformer
 https://github.com/timonkl/PatchedBrainTransformer
 MIT License © 2022 Timon Kl
 일부 코드(model.py, LearningRateScheduler)는 해당 프로젝트 구조를 유지함.
 
-👩‍🔬 Author
+###👩‍🔬 Author
 박선현 (Sunhyeon Park)
 B.S. in Biological Sciences, Chungnam National University
 M.S. in Convergence Biotechnology, Sungkyunkwan University
@@ -50,26 +49,26 @@ M.S. in Convergence Biotechnology, Sungkyunkwan University
 🔗 GitHub Profile : https://github.com/SeonHyeon00/eeg-emotion-analysis
 
 
-🌍 English Version
+#🌍 English Version
 
-📌 Project Overview
+##📌 Project Overview
 This project fine-tunes a Patched Brain Transformer (PBT) model — originally trained on human EEG — using dog EEG data to classify emotional states (Positive / Active).
 The goal is to build a cross-species EEG emotion recognition system that quantifies affective states from neural signals.
 
-🧩 Key Features
+##🧩 Key Features
 Human EEG → Dog EEG domain adaptation
 Frequency-domain feature extraction using Welch PSD
 Transformer-based sequence modeling
 Outputs: Positive / Active emotion probability (%)
 
-🧪 Research Background
+##🧪 Research Background
 EEG data from dogs were collected during behavioral experiments.
 The model was pre-trained on large-scale human EEG emotion datasets (DEAP, DREAMER)
 and fine-tuned with limited canine EEG data for cross-domain adaptation.
 Signal preprocessing includes band-power integration via trapezoidal integration (Scipy)
 to extract frequency-domain energy features.
 
-⚙️ Model Architecture
+##⚙️ Model Architecture
 | Component       | Description                           |
 | --------------- | ------------------------------------- |
 | Backbone        | Patched Brain Transformer (PBT)       |
@@ -81,7 +80,7 @@ to extract frequency-domain energy features.
 | Framework       | PyTorch 2.0                           |
 
 
-🧠 Data Processing Pipeline
+##🧠 Data Processing Pipeline
 Excel (EEG signals)
 ↓
 Welch PSD computation
@@ -92,7 +91,7 @@ PBT inference
 ↓
 Output: Positive / Active (%)
 
-💻 Quick Start
+##💻 Quick Start
 
 1️⃣ Clone repository
 git clone https://github.com/ImCuriosity/eeg-emotion-analysis.git
@@ -104,7 +103,7 @@ pip install -r requirements.txt
 3️⃣ Run inference
 python src/eeg_model_test.py --input data/samples/dog_sample01.xlsx
 
-✅ Example Output
+###✅ Example Output
 Positive 82.4% | Active 65.7%
 
 The output shows the probability (%) of positive and active emotional states inferred from EEG.
@@ -116,7 +115,7 @@ The output shows the probability (%) of positive and active emotional states inf
 | F1-score | 0.78  |
 | Loss     | 0.42  |
 
-📁 Example result files:
+##📁 Example result files:
 
 results/
  ├─ prediction_output.txt      # Text result (Positive / Active)
@@ -125,13 +124,13 @@ results/
 
 <img src="results/confusion_matrix.png" width="500">
 
-🧮 Model Highlights
+##🧮 Model Highlights
 Established reproducible EEG emotion inference pipeline
 Demonstrated cross-species emotion recognition feasibility
 Optimized signal-to-feature mapping for small datasets
 Combined PSD-based statistical features with Transformer sequence modeling
 
-🗂️ Repository Structure
+##🗂️ Repository Structure
 
 📁 eeg-emotion-analysis
 ├── README.md
@@ -157,17 +156,17 @@ Combined PSD-based statistical features with Transformer sequence modeling
 └── docs/
     └── figures/pipeline.png
 
-👩‍🔬 Author
+##👩‍🔬 Author
 
 Seonhyeon Park (박선현)
 M.S. in Life Sciences, Sungkyunkwan University
 Research area: Antiviral protein mechanism & EEG-based emotion analysis
 📧 oneuldo9090@gmail.com
 
-🧾 License
+###🧾 License
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-🙏 Acknowledgement
+###🙏 Acknowledgement
 
 This project uses the Patched Brain Transformer (PBT) architecture by Timon Kluser et al.
 Source: https://github.com/timonkl/PatchedBrainTransformer
