@@ -26,14 +26,14 @@ python src/eeg_model_test.py --input data/samples/dog_sample01.xlsx
 📤 출력 예시
 Positive 82.4% | Active 65.7%
 
-###📚 Citation
+### 📚 Citation
 본 프로젝트는 아래 오픈소스 코드를 기반으로 수정 및 재구성되었습니다.
 PatchedBrainTransformer
 https://github.com/timonkl/PatchedBrainTransformer
 MIT License © 2022 Timon Kl
 일부 코드(model.py, LearningRateScheduler)는 해당 프로젝트 구조를 유지함.
 
-##👩‍🔬 Author
+## 👩‍🔬 Author
 박선현 (Sunhyeon Park)
 B.S. in Biological Sciences, Chungnam National University
 M.S. in Convergence Biotechnology, Sungkyunkwan University
@@ -49,7 +49,7 @@ M.S. in Convergence Biotechnology, Sungkyunkwan University
 🔗 GitHub Profile : https://github.com/SeonHyeon00/eeg-emotion-analysis
 
 
-##🌍 English Version
+## 🌍 English Version
 
 📌 Project Overview
 This project fine-tunes a Patched Brain Transformer (PBT) model — originally trained on human EEG — using dog EEG data to classify emotional states (Positive / Active).
