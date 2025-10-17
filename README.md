@@ -26,6 +26,7 @@ python src/eeg_model_test.py --input data/samples/dog_sample01.xlsx
 📤 출력 예시
 Positive 82.4% | Active 65.7%
 
+
 ### 📚 Citation
 본 프로젝트는 아래 오픈소스 코드를 기반으로 수정 및 재구성되었습니다.
 PatchedBrainTransformer
